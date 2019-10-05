@@ -15,15 +15,23 @@ _global_script_class_icons={
 
 [application]
 
-config/name="practice"
-run/main_scene="res://level1.tscn"
+config/name="Hermit Finds A Home"
+run/main_scene="res://levels/level1/Level1.tscn"
 
 [display]
 
 window/size/width=720
 window/size/height=480
-window/stretch/mode="viewport"
+window/stretch/mode="2d"
 window/stretch/aspect="keep"
+
+[input]
+
+simulate_damage={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [rendering]
 
