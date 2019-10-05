@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://actors/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/background_sandyShallows.png" type="Texture" id=2]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 131.344, 277.76 )
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="background_sandyShallows" type="Sprite" parent="BackgroundLayer"]
+position = Vector2( 658.827, 239.365 )
+scale = Vector2( 0.862623, 0.847292 )
+texture = ExtResource( 2 )
