@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://tree.tscn" type="PackedScene" id=1]
-[ext_resource path="res://player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://actors/player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://grass.jpg" type="Texture" id=3]
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "grass.jpg 0"
