@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://player.png" type="Texture" id=1]
+[ext_resource path="res://player.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.3769, 15.8784 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Darwin Idle"
+tracks/0/type = "value"
+tracks/0/path = NodePath("player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Darwin Walk"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 1, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.001, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 18.3796, 15.291 ), Vector2( 18.3796, 15.291 ), Vector2( 18.38, 13.291 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "The Real Walk"
+length = 0.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("player:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 2, 3 ]
+}
+
+[node name="player" type="KinematicBody2D"]
+position = Vector2( 0.98405, 5.31004 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+move_speed = 200.0
+animation_player_path = NodePath("AnimationPlayer")
+sprite_path = NodePath("player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 19.9127, 13.2451 )
+shape = SubResource( 1 )
+
+[node name="player" type="Sprite" parent="."]
+position = Vector2( 18.3799, 13.9132 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+vframes = 3
+hframes = 3
+frame = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Darwin Idle" = SubResource( 3 )
+"anims/Darwin Walk" = SubResource( 2 )
+"anims/The Real Walk" = SubResource( 4 )
