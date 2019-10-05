@@ -12,7 +12,8 @@ onready var sprite_node
 
 const ANIMATIONS := {
 		"walk": "The Real Walk",
-		"idle": "Darwin Idle"
+		"idle": "Darwin Idle",
+		"attack": "HermitAttack"
 	}
 
 # Called when the node enters the scene tree for the first time.
@@ -31,6 +32,8 @@ func _physics_process(delta):
 		direction.y = 1
 	if Input.is_action_pressed("ui_up"):
 		direction.y = -1
+	if Input.is_action_just_pressed("attack"):
+		animation_player_node.play(ANIMATIONS.attack)
 
 	if direction.x != 0 || direction.y != 0:
 		animation_player_node.play(ANIMATIONS.walk)
