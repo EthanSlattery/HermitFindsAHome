@@ -7,14 +7,17 @@
 [node name="Level1" type="Node2D"]
 
 [node name="InterfaceLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="Interface" parent="InterfaceLayer" instance=ExtResource( 1 )]
 margin_bottom = -1.0
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+editor/display_folded = true
 position = Vector2( 131.344, 277.76 )
 
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
+editor/display_folded = true
 layer = -1
 
 [node name="background_sandyShallows" type="Sprite" parent="BackgroundLayer"]
