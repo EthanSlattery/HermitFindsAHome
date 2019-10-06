@@ -894,10 +894,10 @@ tracks/72/loop_wrap = true
 tracks/72/imported = false
 tracks/72/enabled = true
 tracks/72/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.9, 1.2, 1.4, 1.5, 1.6, 1.6, 1.7, 1.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 15.5139, -16.6672 ) ]
+"values": [ Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ) ]
 }
 tracks/73/type = "value"
 tracks/73/path = NodePath("BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip/ClawsLeftGrip:rotation_degrees")
@@ -906,10 +906,10 @@ tracks/73/loop_wrap = true
 tracks/73/imported = false
 tracks/73/enabled = true
 tracks/73/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.9, 1.2, 1.4, 1.5, 1.6, 1.6, 1.7, 1.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ 0.0, 17.0735, 0.0, 16.682, -16.6445, 0.0, 17.0735, -18.3751, 0.0, 0.0 ]
 }
 tracks/74/type = "value"
 tracks/74/path = NodePath("BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip:position")
@@ -942,10 +942,10 @@ tracks/76/loop_wrap = true
 tracks/76/imported = false
 tracks/76/enabled = true
 tracks/76/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 13.3944, -15.7603 ) ]
+"values": [ Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ), Vector2( 13.3944, -15.7603 ) ]
 }
 tracks/77/type = "value"
 tracks/77/path = NodePath("BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip/ClawsRightGrip:rotation_degrees")
@@ -954,10 +954,10 @@ tracks/77/loop_wrap = true
 tracks/77/imported = false
 tracks/77/enabled = true
 tracks/77/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 1.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ 0.0, 0.0, 16.9423, -17.5409, 17.5323, -17.2258, 0.597671, 17.1562 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -1106,7 +1106,7 @@ texture = ExtResource( 11 )
 offset = Vector2( 12.9993, 74.9055 )
 
 [node name="Claws" type="Node2D" parent="BodyPivot/Body" index="2"]
-rotation = -0.189312
+rotation = 0.13503
 
 [node name="ClawsLeft" type="Node2D" parent="BodyPivot/Body/Claws" index="0"]
 position = Vector2( 0, 28 )
@@ -1128,6 +1128,7 @@ offset = Vector2( 3.84509, -43.9487 )
 
 [node name="ClawsLeftGrip" type="Sprite" parent="BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
 position = Vector2( 15.5139, -16.6672 )
+rotation = 0.225097
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 14 )
@@ -1154,6 +1155,7 @@ offset = Vector2( 3.84509, -43.9487 )
 
 [node name="ClawsRightGrip" type="Sprite" parent="BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
 position = Vector2( 13.3944, -15.7603 )
+rotation = -0.178404
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 14 )
