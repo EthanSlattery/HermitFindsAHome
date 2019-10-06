@@ -4,7 +4,7 @@ func _ready():
 	states_map = {
 		"idle": $Idle,
 		"move": $Move,
-		"stagger": $Stagger,
+		"stagger": $Stagger
 	}
 
 func _change_state(state_name):
