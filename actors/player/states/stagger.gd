@@ -1,4 +1,4 @@
-extends "state.gd"
+extends "res://actors/states/state.gd"
 
 var knockback_direction = Vector2()
 

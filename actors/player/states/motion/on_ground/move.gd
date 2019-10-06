@@ -1,5 +1,7 @@
 extends "on_ground.gd"
 
+signal player_moved(new_origin)
+
 export(float) var MAX_WALK_SPEED = 450
 export(float) var MAX_RUN_SPEED = 700
 
@@ -18,6 +20,7 @@ func update(delta):
 	var input_direction = get_input_direction()
 	if not input_direction:
 		emit_signal("finished", "idle")
+	emit_signal("player_moved", owner.get_global_transform().origin)
 	update_look_direction(input_direction)
 
 	speed = MAX_RUN_SPEED if Input.is_action_pressed("run") else MAX_WALK_SPEED

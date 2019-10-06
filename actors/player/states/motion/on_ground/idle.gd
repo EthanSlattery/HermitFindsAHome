@@ -1,4 +1,4 @@
-extends "on_ground.gd"
+extends "res://actors/player/states/motion/on_ground/on_ground.gd"
 
 func enter():
 	owner.get_node("AnimationPlayer").play("Idle")

@@ -4,7 +4,6 @@ signal direction_changed(new_direction)
 
 var look_direction = Vector2(1, 0) setget set_look_direction
 
-
 func take_damage(attacker, amount, effect=null):
 	if self.is_a_parent_of(attacker):
 		return

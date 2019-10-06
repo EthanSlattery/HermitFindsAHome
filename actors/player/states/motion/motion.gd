@@ -1,5 +1,5 @@
 # Collection of important methods to handle direction and animation
-extends "../state.gd"
+extends "res://actors/states/state.gd"
 
 func handle_input(event):
 	if event.is_action_pressed("simulate_damage"):
