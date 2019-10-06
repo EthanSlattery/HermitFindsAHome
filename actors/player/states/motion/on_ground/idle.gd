@@ -1,7 +1,7 @@
 extends "on_ground.gd"
 
 func enter():
-	owner.get_node("AnimationPlayer").play("idle")
+	owner.get_node("AnimationPlayer").play("Idle")
 
 func handle_input(event):
 	return .handle_input(event)
