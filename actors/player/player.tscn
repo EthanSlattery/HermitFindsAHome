@@ -982,7 +982,7 @@ resource_name = "walk"
 [sub_resource type="CircleShape2D" id=4]
 radius = 29.8218
 
-[node name="Player" groups=[
+[node name="Player" index="0" groups=[
 "actors",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -1198,3 +1198,4 @@ script = ExtResource( 18 )
 [node name="Stagger" type="Node" parent="StateMachine" index="2"]
 script = ExtResource( 19 )
 [connection signal="animation_finished" from="AnimationPlayer" to="StateMachine" method="_on_AnimationPlayer_animation_finished"]
+[connection signal="health_depleted" from="Health" to="." method="_on_Health_health_depleted"]
