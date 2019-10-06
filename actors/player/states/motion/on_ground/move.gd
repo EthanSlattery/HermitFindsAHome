@@ -9,7 +9,7 @@ func enter():
 
 	var input_direction = get_input_direction()
 	update_look_direction(input_direction)
-	owner.get_node("AnimationPlayer").play("walk")
+	owner.get_node("AnimationPlayer").play("Idle")
 
 func handle_input(event):
 	return .handle_input(event)

@@ -5,6 +5,7 @@ signal direction_changed(new_direction)
 var look_direction = Vector2(1, 0) setget set_look_direction
 
 func take_damage(attacker, amount, effect=null):
+	print("take_damage %s, %s" % [attacker, amount])
 	if self.is_a_parent_of(attacker):
 		return
 	$States/Stagger.knockback_direction = (attacker.global_position - global_position).normalized()
@@ -13,7 +14,7 @@ func take_damage(attacker, amount, effect=null):
 func set_dead(value):
 	set_process_input(not value)
 	set_physics_process(not value)
-	$CollisionPolygon2D.disabled = value
+	$CollisionShape2D.disabled = value
 
 func set_look_direction(value):
 	look_direction = value

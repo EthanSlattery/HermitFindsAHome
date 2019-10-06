@@ -11,4 +11,5 @@ func _ready():
 	get_node("Bars/LifeBar").initialize(health_node.max_health)
 
 func _on_Health_health_changed(health):
+	print("_on_Health_health_changed: %s" %health)
 	emit_signal("health_updated", health)
