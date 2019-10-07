@@ -16,21 +16,23 @@ editor/display_folded = true
 margin_bottom = -1.0
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+editor/display_folded = true
 position = Vector2( 131.344, 277.76 )
 
 [node name="AnimationTree" parent="Player" index="1"]
 parameters/playback = SubResource( 1 )
 
 [node name="Claws" parent="Player/BodyPivot/Body" index="2"]
-rotation = 0.035349
+rotation = -0.0874085
 
 [node name="ClawsLeftGrip" parent="Player/BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
-rotation = 0.289023
+rotation = 0.00868347
 
 [node name="ClawsRightGrip" parent="Player/BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
-rotation = 0.0390756
+rotation = 0.113226
 
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
+editor/display_folded = true
 position = Vector2( 826.37, 260.416 )
 
 [node name="BodyPivot" parent="Enemy" index="2"]
@@ -40,7 +42,7 @@ editor/display_folded = false
 layer = -1
 
 [node name="background_sandyShallows" type="Sprite" parent="BackgroundLayer"]
-position = Vector2( 658.827, 239.365 )
+position = Vector2( 666.907, 239.123 )
 scale = Vector2( 0.862623, 0.847292 )
 texture = ExtResource( 4 )
 [connection signal="health_changed" from="Player/Health" to="InterfaceLayer/Interface" method="_on_Health_health_changed"]
