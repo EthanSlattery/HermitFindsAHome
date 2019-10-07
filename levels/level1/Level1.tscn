@@ -17,12 +17,11 @@ script = ExtResource( 1 )
 position = Vector2( 684.214, 62.4843 )
 
 [node name="Boundary2" parent="." instance=ExtResource( 2 )]
-editor/display_folded = true
 position = Vector2( 1344.91, 263.25 )
 rotation = 1.5708
 
 [node name="CollisionShape2D" parent="Boundary2" index="0"]
-position = Vector2( 0, 12.9189 )
+position = Vector2( -4.65396, 613.282 )
 
 [node name="Boundary4" parent="." instance=ExtResource( 2 )]
 editor/display_folded = true
@@ -46,16 +45,16 @@ position = Vector2( 131.344, 277.76 )
 parameters/playback = SubResource( 1 )
 
 [node name="Claws" parent="Player/BodyPivot/Body" index="2"]
-rotation = 0.138549
+rotation = 0.18362
 
 [node name="ClawsLeftGrip" parent="Player/BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
-rotation = 0.107554
+rotation = 0.142543
 
 [node name="ClawsRightGrip" parent="Player/BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
-rotation = 0.184577
+rotation = 0.11205
 
 [node name="Enemy" parent="." instance=ExtResource( 5 )]
-position = Vector2( 826.37, 260.416 )
+position = Vector2( 650.37, 260.416 )
 
 [node name="BodyPivot" parent="Enemy" index="2"]
 editor/display_folded = false
