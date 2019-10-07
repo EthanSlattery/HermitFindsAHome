@@ -10,7 +10,7 @@
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
 
-[node name="Enemy" index="0" groups=[
+[node name="Enemy" groups=[
 "actors",
 "enemies",
 ] instance=ExtResource( 1 )]
