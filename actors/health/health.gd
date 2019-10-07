@@ -4,7 +4,7 @@ signal health_changed(health)
 signal health_depleted
 
 var health = 0
-export(int) var max_health = 10
+export(int) var max_health = 6
 
 func _ready():
 	health = max_health

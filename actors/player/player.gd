@@ -1,6 +1,7 @@
 extends "../character.gd"
 
 signal direction_changed(new_direction)
+signal dead()
 
 const Enemy = preload("res://actors/enemy/enemy.gd")
 var look_direction = Vector2(1, 0) setget set_look_direction
@@ -20,7 +21,7 @@ func set_dead(value):
 	set_physics_process(not value)
 	$CollisionShape2D.disabled = value
 	#TODO: Replace with Dead state
-	$BodyPivot/Body.visible = false
+	emit_signal("dead")
 
 func set_look_direction(value):
 	look_direction = value

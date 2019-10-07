@@ -20,6 +20,9 @@ func set_dead(value):
 func set_look_direction(value):
 	look_direction = value
 	emit_signal("direction_changed", value)
+	
+func increase_speed():
+	$StateMachine/Chase.MAX_WALK_SPEED += 30
 
 func _on_Health_health_depleted():
 	set_dead(true)
