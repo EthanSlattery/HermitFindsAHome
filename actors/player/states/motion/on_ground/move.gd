@@ -11,7 +11,13 @@ func enter():
 
 	var input_direction = get_input_direction()
 	update_look_direction(input_direction)
-	owner.get_node("AnimationPlayer").play("Idle")
+	var stateMachine = owner.get_node("AnimationTree").get("parameters/playback")
+	if input_direction.x > 0:
+		stateMachine.travel("walk")
+	elif input_direction.x < 0:
+		stateMachine.travel("walk")
+		
+		
 
 func handle_input(event):
 	return .handle_input(event)
