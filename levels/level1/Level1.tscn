@@ -16,9 +16,14 @@ margin_bottom = -1.0
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 131.344, 277.76 )
 
+[node name="BodyPivot" parent="Player" index="2"]
+editor/display_folded = false
+
 [node name="Enemy" parent="." instance=ExtResource( 3 )]
-editor/display_folded = true
 position = Vector2( 826.37, 260.416 )
+
+[node name="BodyPivot" parent="Enemy" index="2"]
+editor/display_folded = false
 
 [node name="BackgroundLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -28,6 +33,7 @@ position = Vector2( 658.827, 239.365 )
 scale = Vector2( 0.862623, 0.847292 )
 texture = ExtResource( 4 )
 [connection signal="health_changed" from="Player/Health" to="InterfaceLayer/Interface" method="_on_Health_health_changed"]
+[connection signal="player_moved" from="Player/StateMachine/Move" to="Enemy" method="_on_Player_Move_player_moved"]
 
 [editable path="Player"]
 

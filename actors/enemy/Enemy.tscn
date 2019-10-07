@@ -10,8 +10,9 @@
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
 
-[node name="Enemy" index="0" groups=[
+[node name="Enemy" groups=[
 "actors",
+"enemies",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )
 
@@ -23,9 +24,6 @@ position = Vector2( 1.1169, -31.2463 )
 texture = ExtResource( 3 )
 flip_h = true
 
-[node name="CollisionShape2D" parent="BodyPivot/Area2D" index="0"]
-position = Vector2( 1.17297, -27.2158 )
-
 [node name="Shadow" parent="." index="3"]
 position = Vector2( 2.08984, -2.75052 )
 scale = Vector2( 0.788487, 0.377306 )
@@ -35,5 +33,13 @@ scale = Vector2( 0.788487, 0.377306 )
 [node name="StateMachine" type="Node" parent="." index="5"]
 script = ExtResource( 5 )
 
-[node name="Chase" type="Node" parent="StateMachine" index="0"]
+[node name="Chase" type="Node" parent="StateMachine" index="0" groups=[
+"enemies",
+]]
 script = ExtResource( 6 )
+
+[node name="CollisionShape2D" parent="." index="6"]
+position = Vector2( 2.63242, -26.2428 )
+
+[node name="CollisionShape2D" parent="DetectArea" index="0"]
+position = Vector2( 3.40536, -25.297 )
