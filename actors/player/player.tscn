@@ -121,7 +121,7 @@ tracks/7/keys = {
 "values": [ 0.0 ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightMid/LegsRightMidTip:position")
+tracks/8/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftMid/LegsLeftMidTip:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -133,7 +133,7 @@ tracks/8/keys = {
 "values": [ Vector2( -56.5528, -45.5281 ) ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightMid/LegsRightMidTip:rotation_degrees")
+tracks/9/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftMid/LegsLeftMidTip:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -145,7 +145,7 @@ tracks/9/keys = {
 "values": [ 0.0 ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightHind/LegsRightHindTip:position")
+tracks/10/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftHind/LegsLeftHindTip:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
@@ -157,7 +157,7 @@ tracks/10/keys = {
 "values": [ Vector2( -56.5528, -45.5281 ) ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightHind/LegsRightHindTip:rotation_degrees")
+tracks/11/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftHind/LegsLeftHindTip:rotation_degrees")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -289,7 +289,7 @@ tracks/21/keys = {
 "values": [ 0.0 ]
 }
 tracks/22/type = "value"
-tracks/22/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightMid:position")
+tracks/22/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftMid:position")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/imported = false
@@ -301,7 +301,7 @@ tracks/22/keys = {
 "values": [ Vector2( -101.899, 18.3462 ) ]
 }
 tracks/23/type = "value"
-tracks/23/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightMid:rotation_degrees")
+tracks/23/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftMid:rotation_degrees")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/imported = false
@@ -553,7 +553,7 @@ tracks/43/keys = {
 "values": [ 0.0 ]
 }
 tracks/44/type = "value"
-tracks/44/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightFore:position")
+tracks/44/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftFore:position")
 tracks/44/interp = 1
 tracks/44/loop_wrap = true
 tracks/44/imported = false
@@ -565,7 +565,7 @@ tracks/44/keys = {
 "values": [ Vector2( -63.5938, 51.6293 ) ]
 }
 tracks/45/type = "value"
-tracks/45/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightFore:rotation_degrees")
+tracks/45/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftFore:rotation_degrees")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/imported = false
@@ -793,7 +793,7 @@ tracks/63/keys = {
 "values": [ 0.0 ]
 }
 tracks/64/type = "value"
-tracks/64/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightHind:position")
+tracks/64/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftHind:position")
 tracks/64/interp = 1
 tracks/64/loop_wrap = true
 tracks/64/imported = false
@@ -805,7 +805,7 @@ tracks/64/keys = {
 "values": [ Vector2( -78.3662, 3.29703 ) ]
 }
 tracks/65/type = "value"
-tracks/65/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightHind:rotation_degrees")
+tracks/65/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftHind:rotation_degrees")
 tracks/65/interp = 1
 tracks/65/loop_wrap = true
 tracks/65/imported = false
@@ -817,7 +817,7 @@ tracks/65/keys = {
 "values": [ 0.0 ]
 }
 tracks/66/type = "value"
-tracks/66/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightFore/LegsRightForeTip:position")
+tracks/66/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftFore/LegsLeftForeTip:position")
 tracks/66/interp = 1
 tracks/66/loop_wrap = true
 tracks/66/imported = false
@@ -829,7 +829,7 @@ tracks/66/keys = {
 "values": [ Vector2( -56.5528, -45.5281 ) ]
 }
 tracks/67/type = "value"
-tracks/67/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsRightFore/LegsRightForeTip:rotation_degrees")
+tracks/67/path = NodePath("BodyPivot/Body/Legs/LegsLeft/LegsLeftFore/LegsLeftForeTip:rotation_degrees")
 tracks/67/interp = 1
 tracks/67/loop_wrap = true
 tracks/67/imported = false
@@ -895,10 +895,10 @@ tracks/72/loop_wrap = true
 tracks/72/imported = false
 tracks/72/enabled = true
 tracks/72/keys = {
-"times": PoolRealArray( 0, 0.9, 1.2, 1.4, 1.5, 1.6, 1.6, 1.7, 1.8, 2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.9, 1.2, 1.4, 1.5, 1.6, 1.7, 1.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ) ]
+"values": [ Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ), Vector2( 15.5139, -16.6672 ) ]
 }
 tracks/73/type = "value"
 tracks/73/path = NodePath("BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip/ClawsLeftGrip:rotation_degrees")
@@ -907,10 +907,10 @@ tracks/73/loop_wrap = true
 tracks/73/imported = false
 tracks/73/enabled = true
 tracks/73/keys = {
-"times": PoolRealArray( 0, 0.9, 1.2, 1.4, 1.5, 1.6, 1.6, 1.7, 1.8, 2 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.9, 1.2, 1.4, 1.5, 1.6, 1.7, 1.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 17.0735, 0.0, 16.682, -16.6445, 0.0, 17.0735, -18.3751, 0.0, 0.0 ]
+"values": [ 0.0, 17.0735, 0.0, 16.682, -16.6445, 0.0, -18.3751, 0.0, 0.0 ]
 }
 tracks/74/type = "value"
 tracks/74/path = NodePath("BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip:position")
@@ -1089,38 +1089,38 @@ offset = Vector2( 12.9993, 74.9055 )
 
 [node name="LegsLeft" type="Node2D" parent="BodyPivot/Body/Legs" index="1"]
 
-[node name="LegsRightHind" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft" index="0"]
+[node name="LegsLeftHind" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft" index="0"]
 position = Vector2( -78.3662, 3.29703 )
 texture = ExtResource( 10 )
 offset = Vector2( -34.2994, 27.5752 )
 
-[node name="LegsRightHindTip" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft/LegsRightHind" index="0"]
+[node name="LegsLeftHindTip" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft/LegsLeftHind" index="0"]
 position = Vector2( -56.5528, -45.5281 )
 texture = ExtResource( 11 )
 offset = Vector2( 12.9993, 74.9055 )
 
-[node name="LegsRightMid" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft" index="1"]
+[node name="LegsLeftMid" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft" index="1"]
 position = Vector2( -101.899, 18.3462 )
 texture = ExtResource( 10 )
 offset = Vector2( -34.2994, 27.5752 )
 
-[node name="LegsRightMidTip" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft/LegsRightMid" index="0"]
+[node name="LegsLeftMidTip" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft/LegsLeftMid" index="0"]
 position = Vector2( -56.5528, -45.5281 )
 texture = ExtResource( 11 )
 offset = Vector2( 12.9993, 74.9055 )
 
-[node name="LegsRightFore" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft" index="2"]
+[node name="LegsLeftFore" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft" index="2"]
 position = Vector2( -63.5938, 51.6293 )
 texture = ExtResource( 10 )
 offset = Vector2( -34.2994, 27.5752 )
 
-[node name="LegsRightForeTip" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft/LegsRightFore" index="0"]
+[node name="LegsLeftForeTip" type="Sprite" parent="BodyPivot/Body/Legs/LegsLeft/LegsLeftFore" index="0"]
 position = Vector2( -56.5528, -45.5281 )
 texture = ExtResource( 11 )
 offset = Vector2( 12.9993, 74.9055 )
 
 [node name="Claws" type="Node2D" parent="BodyPivot/Body" index="2"]
-rotation = 0.13503
+rotation = -0.0913999
 
 [node name="ClawsLeft" type="Node2D" parent="BodyPivot/Body/Claws" index="0"]
 position = Vector2( 0, 28 )
@@ -1142,7 +1142,7 @@ offset = Vector2( 3.84509, -43.9487 )
 
 [node name="ClawsLeftGrip" type="Sprite" parent="BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
 position = Vector2( 15.5139, -16.6672 )
-rotation = 0.225097
+rotation = 0.000632562
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 14 )
@@ -1169,7 +1169,7 @@ offset = Vector2( 3.84509, -43.9487 )
 
 [node name="ClawsRightGrip" type="Sprite" parent="BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
 position = Vector2( 13.3944, -15.7603 )
-rotation = -0.178404
+rotation = 0.115637
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 14 )
