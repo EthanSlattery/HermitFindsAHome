@@ -23,16 +23,16 @@ position = Vector2( 1.1169, -31.2463 )
 texture = ExtResource( 3 )
 flip_h = true
 
-[node name="CollisionShape2D" parent="." index="3"]
-position = Vector2( 1.17297, -29.1617 )
+[node name="CollisionShape2D" parent="BodyPivot/Area2D" index="0"]
+position = Vector2( 1.17297, -27.2158 )
 
-[node name="Shadow" parent="." index="4"]
+[node name="Shadow" parent="." index="3"]
 position = Vector2( 2.08984, -2.75052 )
 scale = Vector2( 0.788487, 0.377306 )
 
-[node name="Health" parent="." index="5" instance=ExtResource( 4 )]
+[node name="Health" parent="." index="4" instance=ExtResource( 4 )]
 
-[node name="StateMachine" type="Node" parent="." index="6"]
+[node name="StateMachine" type="Node" parent="." index="5"]
 script = ExtResource( 5 )
 
 [node name="Chase" type="Node" parent="StateMachine" index="0"]

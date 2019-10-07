@@ -5,7 +5,7 @@
 [ext_resource path="res://actors/shadow.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 25.0715, 6.10168 )
+extents = Vector2( 52.6867, 34.8186 )
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -20,7 +20,9 @@ script = ExtResource( 1 )
 position = Vector2( 0.14394, -55.5703 )
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Area2D" type="Area2D" parent="BodyPivot"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BodyPivot/Area2D"]
 position = Vector2( -0.772949, -3.86473 )
 shape = SubResource( 1 )
 

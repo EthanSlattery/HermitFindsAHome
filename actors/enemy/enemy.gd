@@ -1,4 +1,4 @@
-extends "../character.gd"
+extends "res://actors/character.gd"
 
 signal direction_changed(new_direction)
 
@@ -21,10 +21,8 @@ func set_look_direction(value):
 	look_direction = value
 	emit_signal("direction_changed", value)
 
-func _hit(object):
-	pass
-	#if (object extends Enemy):
-		#take_damage()
-
 func _on_Health_health_depleted():
 	set_dead(true)
+
+func _on_Player_Move_player_moved(new_origin):
+	$StateMachine/Chase.player_origin = new_origin
