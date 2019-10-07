@@ -2,8 +2,7 @@ extends "res://actors/state_machine.gd"
 
 func _ready():
 	states_map = {
-		"chase": $Chase,
-		"stagger": $Stagger
+		"chase": $Chase
 	}
 
 func _change_state(state_name):

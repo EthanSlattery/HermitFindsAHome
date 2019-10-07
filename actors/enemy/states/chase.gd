@@ -9,7 +9,6 @@ var target_angle = Vector2()
 func enter():
 	speed = 0.0
 	velocity = Vector2()
-	owner.get_node("AnimationPlayer").play("Idle")
 
 func update(delta):
 	speed = MAX_WALK_SPEED

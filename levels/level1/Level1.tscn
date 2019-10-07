@@ -45,15 +45,16 @@ position = Vector2( 131.344, 277.76 )
 parameters/playback = SubResource( 1 )
 
 [node name="Claws" parent="Player/BodyPivot/Body" index="2"]
-rotation = 0.18362
+rotation = -0.126747
 
 [node name="ClawsLeftGrip" parent="Player/BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
-rotation = 0.142543
+rotation = -0.275345
 
 [node name="ClawsRightGrip" parent="Player/BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
-rotation = 0.11205
+rotation = 0.250603
 
 [node name="Enemy" parent="." instance=ExtResource( 5 )]
+editor/display_folded = true
 position = Vector2( 650.37, 260.416 )
 
 [node name="BodyPivot" parent="Enemy" index="2"]
@@ -68,7 +69,7 @@ scale = Vector2( 0.862623, 0.847292 )
 texture = ExtResource( 6 )
 
 [node name="GameTimer" type="Timer" parent="."]
-wait_time = 30.0
+wait_time = 60.0
 one_shot = true
 autostart = true
 
