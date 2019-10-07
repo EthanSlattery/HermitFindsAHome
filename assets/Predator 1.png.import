@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/crab_placeholder.png-871d07a081b8199bd6fb3344f8e6f5b1.stex"
+path="res://.import/Predator 1.png-38db8a51e022207a429e27ed63c88cc1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://actors/player/crab_placeholder.png"
-dest_files=[ "res://.import/crab_placeholder.png-871d07a081b8199bd6fb3344f8e6f5b1.stex" ]
+source_file="res://assets/Predator 1.png"
+dest_files=[ "res://.import/Predator 1.png-38db8a51e022207a429e27ed63c88cc1.stex" ]
 
 [params]
 

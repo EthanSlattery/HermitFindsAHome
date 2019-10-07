@@ -6,12 +6,10 @@ var maximum = 100
 var current_health = 0
 
 func initialize(max_value):
-	print("Bar initialize %s" %max_value)
 	maximum = max_value
 	emit_signal("maximum_changed", maximum)
 
 func _on_Interface_health_updated(new_health):
-	print("_on_Interface_health_updated: %s" %new_health)
 	animate_value(current_health, new_health)
 	current_health = new_health
 

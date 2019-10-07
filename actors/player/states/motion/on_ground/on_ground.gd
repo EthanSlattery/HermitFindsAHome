@@ -1,4 +1,4 @@
-extends "../motion.gd"
+extends "res://actors/player/states/motion/motion.gd"
 
 var speed = 0.0
 var velocity = Vector2()
