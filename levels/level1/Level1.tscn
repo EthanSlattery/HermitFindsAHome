@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://levels/level1/Level1.gd" type="Script" id=1]
 [ext_resource path="res://environment/Boundary.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/background_sandyShallows.png" type="Texture" id=6]
 [ext_resource path="res://interface/theme/default_theme.tres" type="Theme" id=7]
 [ext_resource path="res://interface/label_bg.png" type="Texture" id=8]
+[ext_resource path="res://assets/game-loop.wav" type="AudioStream" id=9]
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=1]
 
@@ -46,16 +47,13 @@ position = Vector2( 131.344, 277.76 )
 parameters/playback = SubResource( 1 )
 
 [node name="Claws" parent="Player/BodyPivot/Body" index="2"]
-rotation = -0.0118825
+rotation = 0.00162295
 
 [node name="ClawsLeftGrip" parent="Player/BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
-rotation = 0.181161
+rotation = 0.00125988
 
 [node name="ClawsRightGrip" parent="Player/BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
-rotation = 0.0676052
-
-[node name="StateMachine" parent="Player" index="6"]
-editor/display_folded = false
+rotation = 0.0
 
 [node name="Enemy" parent="." instance=ExtResource( 5 )]
 editor/display_folded = true
@@ -96,6 +94,10 @@ margin_top = -2.98654
 margin_right = 350.836
 margin_bottom = 151.013
 texture = ExtResource( 8 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+autoplay = true
 [connection signal="dead" from="Player" to="." method="_on_Player_dead"]
 [connection signal="health_changed" from="Player/Health" to="InterfaceLayer/Interface" method="_on_Health_health_changed"]
 [connection signal="player_moved" from="Player/StateMachine/Move" to="." method="_on_Move_player_moved"]

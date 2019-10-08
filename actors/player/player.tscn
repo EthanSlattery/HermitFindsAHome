@@ -1940,7 +1940,7 @@ start_node = "idle"
 [sub_resource type="AnimationNodeStateMachinePlayback" id=9]
 resource_local_to_scene = false
 
-[node name="Player" index="0" groups=[
+[node name="Player" groups=[
 "actors",
 ] instance=ExtResource( 1 )]
 script = ExtResource( 2 )
@@ -2083,7 +2083,7 @@ texture = ExtResource( 11 )
 offset = Vector2( 12.9993, 74.9055 )
 
 [node name="Claws" type="Node2D" parent="BodyPivot/Body" index="2"]
-rotation = -0.128397
+rotation = 0.194826
 
 [node name="ClawsLeft" type="Node2D" parent="BodyPivot/Body/Claws" index="0"]
 position = Vector2( 0, 28 )
@@ -2105,7 +2105,7 @@ offset = Vector2( 3.84509, -43.9487 )
 
 [node name="ClawsLeftGrip" type="Sprite" parent="BodyPivot/Body/Claws/ClawsLeft/ClawsLeftBase/ClawsLeftTip" index="0"]
 position = Vector2( 15.5139, -16.6672 )
-rotation = -0.287279
+rotation = 0.151242
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 14 )
@@ -2132,7 +2132,7 @@ offset = Vector2( 3.84509, -43.9487 )
 
 [node name="ClawsRightGrip" type="Sprite" parent="BodyPivot/Body/Claws/ClawsRight/ClawsRightBase/ClawsRightTip" index="0"]
 position = Vector2( 13.3944, -15.7603 )
-rotation = 0.249625
+rotation = -0.0460788
 z_index = 1
 z_as_relative = false
 texture = ExtResource( 14 )
@@ -2145,6 +2145,7 @@ z_index = -1
 [node name="Health" parent="." index="5" instance=ExtResource( 15 )]
 
 [node name="StateMachine" type="Node" parent="." index="6"]
+editor/display_folded = true
 script = ExtResource( 16 )
 
 [node name="Idle" type="Node" parent="StateMachine" index="0"]
